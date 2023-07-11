@@ -1,0 +1,10 @@
+.app_footer_container {
+    text-align: center;
+    padding: 5px 0;
+    font-size: 1.3em;
+    background-color: #17193b;
+    color: aliceblue;
+    font-family: "Swis721 WGL4 BT", serif;
+    flex-grow: 0;
+    flex-shrink: 0
+}

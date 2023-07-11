@@ -1,0 +1,18 @@
+.userinfo_container {
+    margin: 50px 0 0 100px;
+    background: gold;
+    display: flex;
+    font-size: 1.7em;
+    font-family: 'Manrope', sans-serif;
+}
+
+.user_main_avatar {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+}
+
+.user_description {
+    margin-top: 20px;
+    margin-left: 40px;
+}
