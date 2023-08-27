@@ -1,0 +1,51 @@
+.follower_container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    width: calc(100% - 40px);
+    padding: 15px 10px;
+    margin: 5px 10px;
+    border-radius: 5px;
+    background: #48484866;
+    transition: 0.5s;
+}
+.follower_container:hover {
+    background: #252525;
+}
+.follower_container:active {
+    padding: 20px 15px;
+    background: rgba(37, 37, 37, 0.69);
+}
+
+.follower_main_photo {
+    object-fit: cover;
+    display: flex;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border: 0.01em solid;
+}
+
+.follower_username {
+    margin-left: 2%;
+    font-size: 1.5em;
+}
+.unfollow_button {
+    margin-left: auto;
+    border: 0;
+    cursor: pointer;
+    background: #c4fff9;
+    padding: 5px;
+    font-size: .9em;
+}
+.unfollow_button:hover {
+    background: #ecfffd;
+}
+
+@media screen and (max-width: 480px) {
+    .follower_container {
+        width: calc(100% - 30px);
+        margin: 5px 5px;
+    }
+}

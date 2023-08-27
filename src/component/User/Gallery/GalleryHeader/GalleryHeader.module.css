@@ -1,0 +1,30 @@
+.gallery_header {
+    display: flex;
+    width: calc(100% - 40px);
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+    border-radius: 10px
+}
+
+@media screen and (max-width: 1024px) {
+    .gallery_header {
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .gallery_header {
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (max-width: 612px) {
+    .gallery_header {
+        padding: 5px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .gallery_header {
+        width: calc(100% - 20px);
+    }
+}

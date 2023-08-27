@@ -1,0 +1,68 @@
+.page_body {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex-grow: 1;
+    font-size: 3.5em;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer_error_container {
+    position: absolute;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+    height: 90%;
+    width: 85%;
+    background: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+.error_image_container {
+    width: 45%;
+}
+.error_image {
+    width: 100%;
+}
+
+.back_page {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .page_body {
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .page_body {
+        font-size: 2.2em;
+    }
+    .error_image_container {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page_body {
+        font-size: 1.8em;
+    }
+    .outer_error_container {
+        width: 100%;
+    }
+    .error_image_container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page_body {
+        font-size: 1.5em;
+    }
+    .error_image_container {
+        width: 100%;
+    }
+}

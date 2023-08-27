@@ -1,18 +1,100 @@
 .userinfo_container {
-    margin: 50px 0 0 100px;
-    background: gold;
     display: flex;
-    font-size: 1.7em;
+    max-width: 700px;
+    width: 70%;
+    margin: 2% 0 0 3%;
+    padding: 20px 0 40px 20px;
+    background: #373737;
     font-family: 'Manrope', sans-serif;
+    font-size: 1.7em;
+    border-radius: 10px;
+    box-shadow: -3px -3px 10px 5px #373737;
 }
 
-.user_main_avatar {
+.userinfo_container p {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.user_main_photo {
+    object-fit: cover;
+    display: flex;
     border-radius: 50%;
+    cursor: pointer;
     width: 200px;
     height: 200px;
+    border: solid;
+    transition: 0.5s;
+}
+.user_main_photo:hover {
+    opacity: 0.7;
 }
 
 .user_description {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
     margin-top: 20px;
     margin-left: 40px;
+}
+.user_follows_description {
+    margin-top: auto;
+    font-size: .6em;
+}
+.user_follows_description span {
+    font-weight: bold;
+}
+.user_follows_description span:last-child {
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .userinfo_container {
+        font-size: 1.6em;
+    }
+    .user_main_photo {
+        width: 150px;
+        height: 150px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .userinfo_container {
+        font-size: 1.5em;
+    }
+    .user_main_photo {
+        width: 130px;
+        height: 130px;
+    }
+    .user_description {
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .userinfo_container {
+        font-size: 1.3em;
+    }
+    .user_main_photo {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .userinfo_container {
+        border-radius: 0;
+        font-size: 1.1em;
+        width: calc(100% - 20px);
+        margin: 0;
+        padding: 10px 0 40px 20px;
+        box-shadow: 0 0 0 1px #bab8;
+    }
+    .user_description {
+        width: 55%;
+        margin-left: 20px;
+    }
+
+    .user_follows_description span:last-child {
+        margin-left: 5px;
+    }
 }

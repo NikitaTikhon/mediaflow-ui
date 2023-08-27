@@ -1,2 +1,2 @@
-# mediaflow-frontend
-Mediaflow client side
+# Mediaflow
+Interface to interact with represent content

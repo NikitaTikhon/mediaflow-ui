@@ -1,6 +1,7 @@
 export interface Photo {
     id: number;
     imageURL: string;
-    name: string;
-    year: number;
+    publicId: string;
+    userId: string
+    creationData: string;
 }
