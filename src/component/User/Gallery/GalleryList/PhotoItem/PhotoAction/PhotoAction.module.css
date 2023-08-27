@@ -1,0 +1,57 @@
+@value photo_container from "../PhotoItem.module.css";
+
+.dropdown_ellipsis {
+    display: none;
+    align-items: flex-end;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 1.5em;
+}
+
+.ellipsis {
+    color: black;
+    margin: 2px;
+    padding: 2px;
+}
+
+.dropdown_options {
+    display: flex;
+    right: 5px;
+    text-align-last: start;
+    flex-direction: column;
+    overflow: auto;
+    background-color: rgba(255, 255, 255, 0.74);
+    border-radius: 5px;
+    box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.4);
+}
+
+.dropdown_options button {
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+    padding: 5px;
+    border: 0;
+    color: black;
+    text-decoration: none;
+}
+
+@media (hover: hover) {
+    .photo_container:hover .dropdown_ellipsis {
+        display: flex;
+    }
+    .ellipsis:hover {
+        border-radius: 50%;
+        background-color: rgba(21, 21, 21, 0.18);
+    }
+    .dropdown_options button:hover {
+        background-color: #8c96f5;
+        color: black;
+        text-decoration: none;
+    }
+}
+
+.ellipsis:active {
+    background-color: rgba(117, 117, 117, 0.55);
+}

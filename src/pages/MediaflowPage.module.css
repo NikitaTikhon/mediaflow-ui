@@ -1,3 +1,33 @@
 .page_body {
     flex-grow: 1;
+    display: flex;
+    font-size: 6em;
+    align-items: center;
+    justify-content: center;
+    background: #2e2e2e;
+    color: aliceblue;
+}
+
+@media screen and (max-width: 1200px) {
+    .page_body {
+        font-size: 5em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .page_body {
+        font-size: 4em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .page_body {
+        font-size: 3.5em;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .page_body {
+        font-size: 3em;
+    }
 }

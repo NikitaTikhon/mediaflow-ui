@@ -1,0 +1,40 @@
+.outer_spinner_container, .outer_spinner_container_no_height {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.outer_spinner_container {
+    height: 100%;
+}
+
+.spinner, .sm_spinner {
+    display: flex;
+    border-radius: 50%;
+    background:
+            radial-gradient(farthest-side, #000000 94%,#0000) top/8px 8px no-repeat,
+            conic-gradient(#0000 30%, #151515);
+    -webkit-mask: radial-gradient(farthest-side,#0000 calc(100% - 8px), #000 0);
+    animation:s3 1s infinite linear;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+}
+
+.sm_spinner {
+    display: inline-flex;
+    height: 1em;
+    width: 1em;
+}
+
+@keyframes s3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,23 +1,19 @@
 import {BrowserRouter} from "react-router-dom";
-import {ReactKeycloakProvider} from "@react-keycloak/web";
-import AppNavbar from "./component/Navbar/AppNavbar";
 import AppRouter from "./routes/AppRouter";
-import AppFooter from "./component/Footer/AppFooter";
-import keycloak from "./keycloack/keycloak.js"
 import "./index.css";
+import {store} from "./store/store"
+import {Provider} from "react-redux";
+import ScrollBack from "./component/ScrollBack/ScrollBack";
 
 function App() {
 
     return (
-        <ReactKeycloakProvider
-            authClient={keycloak}
-        >
+        <Provider store={store}>
             <BrowserRouter>
-                <AppNavbar/>
                 <AppRouter/>
-                <AppFooter/>
+                <ScrollBack/>
             </BrowserRouter>
-        </ReactKeycloakProvider>
+        </Provider>
     )
 }
 

@@ -1,14 +1,14 @@
 import {FC} from "react";
-import classes from "./ProfilePage.module.css"
-import Gallery from "../component/Gallery/Gallery";
+import UserGallery from "../component/User/Gallery/UserGallery";
 import UserInfo from "../component/User/UserInfo/UserInfo";
+import classes from "./ProfilePage.module.css"
 
 const ProfilePage: FC = () => {
 
     return (
         <div className={classes.page_body}>
-            {/*<UserInfo/>*/}
-            {/*<Gallery/>*/}
+            <UserInfo/>
+            <UserGallery/>
         </div>
     )
 }

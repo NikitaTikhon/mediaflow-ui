@@ -1,4 +1,3 @@
-import React from 'react';
 import classes from "./AppFooter.module.css"
 
 const AppFooter = () => {
